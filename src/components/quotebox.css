@@ -1,0 +1,36 @@
+.quote__container {
+  background-color: #3d3a50;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.quote {
+  font-size: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  left: -20px;
+  bottom: -50px;
+  font-size: 50px;
+}
+
+.quote::after {
+  content: '"';
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  font-size: 50px;
+}
+
+.author {
+  margin: 10px 0;
+  font-weight: 600;
+}
